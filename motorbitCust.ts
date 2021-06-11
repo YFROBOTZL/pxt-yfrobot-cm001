@@ -276,7 +276,7 @@ namespace motorbitCust {
     //% blockId=motorbitCust_readXRocker
     //% block="Read Rocker X-axis on %pin"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
-    export function readXRocker(pinx: DigitalPin): number {
+    export function readXRocker(pinx: AnalogPin): number {
         return pins.analogReadPin(pinx)
     }
 
@@ -289,7 +289,7 @@ namespace motorbitCust {
     //% blockId=motorbitCust_readYRocker
     //% block="Read Rocker Y-axis on %pin"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
-    export function readYRocker(piny: DigitalPin): number {
+    export function readYRocker(piny: AnalogPin): number {
         return pins.analogReadPin(piny)
     }
 
