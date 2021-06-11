@@ -228,6 +228,15 @@ namespace motorbitCust {
         motorRun(Motors.M2, 0, 0);
     }
 
+    /**
+     * Read the Collision Switch.
+     * @param pin collision Switch pin. eg: DigitalPin.P8
+     * @returns 
+     */
+    export function readCollisionSwitch(pin: DigitalPin): number {
+        return pins.digitalReadPin(pin)
+    }
+
     function pushBit(bit: number): number {
         irState.bitsReceived += 1;
         if (irState.bitsReceived <= 8) {
