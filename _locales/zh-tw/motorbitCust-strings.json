@@ -52,6 +52,8 @@
   "motorbitCust.readCollisionSwitch|block": "讀取引腳%pin上的碰撞開關",
   "motorbitCust.readLeftPatrolSensor|block": "讀取引腳%pin上的左巡線傳感器",
   "motorbitCust.readRightPatrolSensor|block": "讀取引腳%pin上的右巡線傳感器",
+  "motorbitCust.readXRocker|block": "讀取引腳%pin上的搖桿X軸",
+  "motorbitCust.readYRocker|block": "讀取引腳%pin上的搖桿Y軸",
   "motorbitCust|block": "motorbitCust",
   "{id:category}motorbitCust": "motorbitCust",
   "{id:subcategory}IR Receiver": "IR Receiver"

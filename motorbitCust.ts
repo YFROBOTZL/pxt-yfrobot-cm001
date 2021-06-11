@@ -267,6 +267,31 @@ namespace motorbitCust {
         return pins.digitalReadPin(pinr)
     }
 
+    /**
+     * Read X-axis of the Rocker.
+     * @param pinx the X-axis pin. eg: DigitalPin.P1
+     * @returns the X-axis Value.
+     */
+    //% weight=55
+    //% blockId=motorbitCust_readXRocker
+    //% block="Read Rocker X-axis on %pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    export function readXRocker(pinx: DigitalPin): number {
+        return pins.analogReadPin(pinx)
+    }
+
+    /**
+     * Read Y-axis of the Rocker.
+     * @param piny the Y-axis pin. eg: DigitalPin.P2
+     * @returns the Y-axis Value.
+     */
+    //% weight=54
+    //% blockId=motorbitCust_readYRocker
+    //% block="Read Rocker Y-axis on %pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    export function readYRocker(piny: DigitalPin): number {
+        return pins.analogReadPin(piny)
+    }
 
     function pushBit(bit: number): number {
         irState.bitsReceived += 1;

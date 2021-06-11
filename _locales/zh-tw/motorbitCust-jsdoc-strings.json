@@ -26,7 +26,7 @@
   "motorbitCust.wasAnyIrButtonPressed": "如果自上次調用此函數以來已按下任何按鈕，則返回true。否則為false。",
   "motorbitCust.readCollisionSwitch": "讀取碰撞開關。",
   "motorbitCust.readLeftPatrolSensor": "讀取左巡線傳感器。",
-  "motorbitCust.readRightPatrolSensor": "讀取右巡線傳感器。"
-
-
+  "motorbitCust.readRightPatrolSensor": "讀取右巡線傳感器。",
+  "motorbitCust.readXRocker": "讀取搖桿的X軸。",
+  "motorbitCust.readYRocker": "讀取搖桿的Y軸。"
 }
