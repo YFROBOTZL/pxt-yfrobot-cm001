@@ -231,8 +231,12 @@ namespace motorbitCust {
     /**
      * Read the Collision Switch.
      * @param pin collision Switch pin. eg: DigitalPin.P8
-     * @returns 
+     * @returns the Collision Switch Value.
      */
+    //% weight=60
+    //% blockId=motorbitCust_readCollisionSwitch
+    //% block="Read Collision Switch on %pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
     export function readCollisionSwitch(pin: DigitalPin): number {
         return pins.digitalReadPin(pin)
     }
