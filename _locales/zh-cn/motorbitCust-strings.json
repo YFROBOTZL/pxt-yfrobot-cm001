@@ -49,6 +49,9 @@
   "motorbitCust.turnLeft|block": "以%speed的速度左转",
   "motorbitCust.turnRight|block": "以%speed的速度右转",
   "motorbitCust.wasAnyIrButtonPressed|block": "任意按键被按下",
+  "motorbitCust.readCollisionSwitch|block": "读取引脚%pin上的碰撞开关",
+  "motorbitCust.readLeftPatrolSensor|block": "读取引脚%pin上的左巡线传感器",
+  "motorbitCust.readRightPatrolSensor|block": "读取引脚%pin上的右巡线传感器",
   "motorbitCust|block": "motorbitCust",
   "{id:category}motorbitCust": "motorbitCust",
   "{id:subcategory}IR Receiver": "IR Receiver"

@@ -23,5 +23,10 @@
   "motorbitCust.turnLeft|param|speed": "從0（最小）到255（最大）的速度，例如：128",
   "motorbitCust.turnRight": "以一定速度右轉。",
   "motorbitCust.turnRight|param|speed": "從0（最小）到255（最大）的速度，例如：128",
-  "motorbitCust.wasAnyIrButtonPressed": "如果自上次調用此函數以來已按下任何按鈕，則返回true。否則為false。"
+  "motorbitCust.wasAnyIrButtonPressed": "如果自上次調用此函數以來已按下任何按鈕，則返回true。否則為false。",
+  "motorbitCust.readCollisionSwitch": "讀取碰撞開關。",
+  "motorbitCust.readLeftPatrolSensor": "讀取左巡線傳感器。",
+  "motorbitCust.readRightPatrolSensor": "讀取右巡線傳感器。"
+
+
 }

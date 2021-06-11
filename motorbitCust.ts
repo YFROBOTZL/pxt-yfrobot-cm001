@@ -241,6 +241,33 @@ namespace motorbitCust {
         return pins.digitalReadPin(pin)
     }
 
+    /**
+     * Read the Left Patrol Sensor.
+     * @param pinl the Left Patrol Sensor pin. eg: DigitalPin.P2
+     * @returns the Left Patrol Sensor Value.
+     */
+    //% weight=59
+    //% blockId=motorbitCust_readLeftPatrolSensor
+    //% block="Read Left Patrol Sensor on %pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    export function readLeftPatrolSensor(pinl: DigitalPin): number {
+        return pins.digitalReadPin(pinl)
+    }
+
+    /**
+     * Read the Right Patrol Sensor.
+     * @param pinr the Right Patrol Sensor pin. eg: DigitalPin.P8
+     * @returns the Right Patrol Sensor Value.
+     */
+    //% weight=58
+    //% blockId=motorbitCust_readRightPatrolSensor
+    //% block="Read Right Patrol Sensor on %pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    export function readRightPatrolSensor(pinr: DigitalPin): number {
+        return pins.digitalReadPin(pinr)
+    }
+
+
     function pushBit(bit: number): number {
         irState.bitsReceived += 1;
         if (irState.bitsReceived <= 8) {
