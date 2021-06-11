@@ -1,17 +1,17 @@
 {
-    "name": "motorbit",
+    "name": "motorbitCust",
     "version": "0.0.1",
-    "description": "YFRobot MotorBit MakeCode Extensions For Micro:bit",
+    "description": "Customize YFRobot motorbit MakeCode Extensions For Micro:bit",
     "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
-        "motorbit.ts",
-        "_locales/zh-cn/motorbit-strings.json",
-        "_locales/zh-cn/motorbit-jsdoc-strings.json",
-        "_locales/zh-tw/motorbit-strings.json",
-        "_locales/zh-tw/motorbit-jsdoc-strings.json",
+        "motorbitCust.ts",
+        "_locales/zh-cn/motorbitCust-strings.json",
+        "_locales/zh-cn/motorbitCust-jsdoc-strings.json",
+        "_locales/zh-tw/motorbitCust-strings.json",
+        "_locales/zh-tw/motorbitCust-jsdoc-strings.json",
         "README.md"
     ],
     "testFiles": [

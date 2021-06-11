@@ -1,5 +1,5 @@
-# pxt-yfrobot-motorbit -- MotorBit
-YFROBOT MotorBit extension for makecode
+# motorbitCust
+Customize YFROBOT MotorBit extension for makecode
 
 [MotorBit is an easy-to-use motor drive expansion board for MicroBit](http://www.yfrobot.com.cn/wiki/index.php?title=Motor:Bit)
 
@@ -11,47 +11,47 @@ The Motor:Bit also features the “GVS” connectors, allowing for easy direct c
 
 ## Basic usage
 
-* Set the direction and speed of MotorBit motor
+* Set the direction and speed of motorbitCust motor
 
 ```blocks
- motorbit.motorRun(motorbit.Motors.ML, motorbit.Dir.CW, 120)
- motorbit.motorRun(motorbit.Motors.MR, motorbit.Dir.CCW, 120)
+ motorbitCust.motorRun(motorbitCust.Motors.ML, motorbitCust.Dir.CW, 120)
+ motorbitCust.motorRun(motorbitCust.Motors.MR, motorbitCust.Dir.CCW, 120)
 ```
 
-* Stop the MotorBit motor 
+* Stop the motorbitCust motor 
 
 ```blocks
-motorbit.motorStop(motorbit.Motors.ML)
+motorbitCust.motorStop(motorbitCust.Motors.ML)
 ```
 
 * Move forward
 
 ```blocks
-motorbit.forward(128)
+motorbitCust.forward(128)
 ```
 
 * Move back
 
 ```blocks
-motorbit.back(128)
+motorbitCust.back(128)
 ```
 
 * Turn left
 
 ```blocks
-motorbit.turnLeft(128)
+motorbitCust.turnLeft(128)
 ```
 
 * Turn right
 
 ```blocks
-motorbit.turnRight(128)
+motorbitCust.turnRight(128)
 ```
 
 * Read IR sensor value
 
 ```blocks
-basic.showNumber(motorbit.irButtonCode())
+basic.showNumber(motorbitCust.irButtonCode())
 ```
 
 

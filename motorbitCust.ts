@@ -1,6 +1,6 @@
 /** 
- * @file pxt-yfrobot-motorbit/motorbit.ts
- * @brief YFROBOT's MotorBit makecode library.
+ * @file motorbitCust.ts
+ * @brief Customize YFROBOT's motorbitCust makecode library.
  * @n This is a MakeCode graphics programming extension 
  *    for MicroBit motor drive expansion board.
  * 
@@ -12,13 +12,13 @@
 */
 
 // motor pin 
-let motorbitMotor1D = DigitalPin.P13
-let motorbitMotor1A = AnalogPin.P14
-let motorbitMotor2D = DigitalPin.P15
-let motorbitMotor2A = AnalogPin.P16
+let motorbitCustMotor1D = DigitalPin.P13
+let motorbitCustMotor1A = AnalogPin.P14
+let motorbitCustMotor2D = DigitalPin.P15
+let motorbitCustMotor2A = AnalogPin.P16
 
-//% color="#7BD239" weight=10 icon="\uf1b0"
-namespace motorbit {
+//% color="#5698c3" weight=10 icon="\uf12e"
+namespace motorbitCust {
 
     // IR
     let irState: IrState
@@ -140,9 +140,9 @@ namespace motorbit {
     }
 
     /**
-     * Set the direction and speed of MotorBit motor.
-     * @param index motor m1/m2/all. eg: motorbit.Motors.MAll
-     * @param direction direction to turn. eg: motorbit.Dir.CW
+     * Set the direction and speed of motorbitCust motor.
+     * @param index motor m1/m2/all. eg: motorbitCust.Motors.MAll
+     * @param direction direction to turn. eg: motorbitCust.Dir.CW
      * @param speed speed of motors (0 to 255). eg: 120
      */
     //% weight=90
@@ -158,22 +158,22 @@ namespace motorbit {
         speed = clamp(speed, 0, 255) * 4.01;  // 0~255 > 0~1023
 
         if (index == Motors.M1) {
-            pins.digitalWritePin(motorbitMotor1D, direction);
-            pins.analogWritePin(motorbitMotor1A, speed);
+            pins.digitalWritePin(motorbitCustMotor1D, direction);
+            pins.analogWritePin(motorbitCustMotor1A, speed);
         } else if (index == Motors.M2) {
-            pins.digitalWritePin(motorbitMotor2D, dir_m2);
-            pins.analogWritePin(motorbitMotor2A, speed);
+            pins.digitalWritePin(motorbitCustMotor2D, dir_m2);
+            pins.analogWritePin(motorbitCustMotor2A, speed);
         } else if (index == Motors.MAll) {
-            pins.digitalWritePin(motorbitMotor1D, direction);
-            pins.analogWritePin(motorbitMotor1A, speed);
-            pins.digitalWritePin(motorbitMotor2D, dir_m2);
-            pins.analogWritePin(motorbitMotor2A, speed);
+            pins.digitalWritePin(motorbitCustMotor1D, direction);
+            pins.analogWritePin(motorbitCustMotor1A, speed);
+            pins.digitalWritePin(motorbitCustMotor2D, dir_m2);
+            pins.analogWritePin(motorbitCustMotor2A, speed);
         }
     }
 
     /**
-     * Stop the MotorBit motor.
-     * @param motor motor m1/m2/all. eg: motorbit.Motors.MAll
+     * Stop the motorbitCust motor.
+     * @param motor motor m1/m2/all. eg: motorbitCust.Motors.MAll
      */
     //% weight=89
     //% blockId=motor_motorStop block="motor |%motor stop"
@@ -187,7 +187,7 @@ namespace motorbit {
      * @param speed the speed from 0 (min) to 255 (max), eg:128
      */
     //% weight=70
-    //% blockId=motorbit_forward block="move forward with speed %speed"
+    //% blockId=motorbitCust_forward block="move forward with speed %speed"
     //% speed.min=0 speed.max=255
     export function forward(speed: number): void {
         motorRun(Motors.MAll, 0, speed);
@@ -198,7 +198,7 @@ namespace motorbit {
      * @param speed the speed from 0 (min) to 255 (max), eg:128
      */
     //% weight=69
-    //% blockId=motorbit_back block="move back with speed %speed"
+    //% blockId=motorbitCust_back block="move back with speed %speed"
     //% speed.min=0 speed.max=255
     export function back(speed: number): void {
         motorRun(Motors.MAll, 1, speed);
@@ -209,7 +209,7 @@ namespace motorbit {
      * @param speed the speed from 0 (min) to 255 (max), eg:128
      */
     //% weight=65
-    //% blockId=motorbit_turnLeft block="turn left with speed %speed"
+    //% blockId=motorbitCust_turnLeft block="turn left with speed %speed"
     //% speed.min=0 speed.max=255
     export function turnLeft(speed: number): void {
         motorRun(Motors.M1, 0, 0);
@@ -221,7 +221,7 @@ namespace motorbit {
      * @param speed the speed from 0 (min) to 255 (max), eg:128
      */
     //% weight=64
-    //% blockId=motorbit_turnRight block="turn right with speed %speed"
+    //% blockId=motorbitCust_turnRight block="turn right with speed %speed"
     //% speed.min=0 speed.max=255
     export function turnRight(speed: number): void {
         motorRun(Motors.M1, 0, speed);
@@ -301,7 +301,7 @@ namespace motorbit {
     /**
      * Connects to the IR receiver module at the specified pin and configures the IR protocol.
      * @param pin IR receiver pin. eg: DigitalPin.P2
-     * @param protocol IR protocol. eg: motorbit.IrProtocol.NEC
+     * @param protocol IR protocol. eg: motorbitCust.IrProtocol.NEC
      */
     //% subcategory="IR Receiver"
     //% blockId="makerbit_infrared_connect_receiver"
