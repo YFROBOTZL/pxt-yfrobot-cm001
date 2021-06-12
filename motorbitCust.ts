@@ -146,7 +146,7 @@ namespace motorbitCust {
      * @param speed speed of motors (0 to 255). eg: 120
      */
     //% weight=90
-    //% blockId=motor_MotorRun block="motor|%index|move|%direction|at speed|%speed"
+    //% blockId=motorbitCust_MotorRun block="motor|%index|move|%direction|at speed|%speed"
     //% speed.min=0 speed.max=255
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
@@ -176,7 +176,7 @@ namespace motorbitCust {
      * @param motor motor m1/m2/all. eg: motorbitCust.Motors.MAll
      */
     //% weight=89
-    //% blockId=motor_motorStop block="motor |%motor stop"
+    //% blockId=motorbitCust_motorStop block="motor |%motor stop"
     //% motor.fieldEditor="gridpicker" motor.fieldOptions.columns=2 
     export function motorStop(motor: Motors): void {
         motorRun(motor, 0, 0);
