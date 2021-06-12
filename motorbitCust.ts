@@ -269,7 +269,7 @@ namespace motorbitCust {
 
     /**
      * Read X-axis of the Rocker.
-     * @param pinx the X-axis pin. eg: DigitalPin.P1
+     * @param pinx the X-axis pin. eg: AnalogPin.P1
      * @returns the X-axis Value.
      */
     //% weight=55
@@ -282,7 +282,7 @@ namespace motorbitCust {
 
     /**
      * Read Y-axis of the Rocker.
-     * @param piny the Y-axis pin. eg: DigitalPin.P2
+     * @param piny the Y-axis pin. eg: AnalogPin.P2
      * @returns the Y-axis Value.
      */
     //% weight=54
