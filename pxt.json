@@ -1,10 +1,11 @@
 {
     "name": "motorbitCust",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Customize YFRobot motorbit MakeCode Extensions For Micro:bit",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "motorbitCust.ts",

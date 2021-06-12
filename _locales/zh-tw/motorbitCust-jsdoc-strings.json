@@ -28,5 +28,10 @@
   "motorbitCust.readLeftPatrolSensor": "讀取左巡線傳感器。",
   "motorbitCust.readRightPatrolSensor": "讀取右巡線傳感器。",
   "motorbitCust.readXRocker": "讀取搖桿的X軸。",
-  "motorbitCust.readYRocker": "讀取搖桿的Y軸。"
+  "motorbitCust.readYRocker": "讀取搖桿的Y軸。",
+  "motorbitCust.ping": "發送ping並獲得迴聲時間結果（以微秒為單位）",
+  "motorbitCust.ping|param|echo": "echo引腳",
+  "motorbitCust.ping|param|maxCmDistance": "最大距離單位cm(默認500)",
+  "motorbitCust.ping|param|trig": "tigger引腳",
+  "motorbitCust.ping|param|unit": "轉換單位"
 }

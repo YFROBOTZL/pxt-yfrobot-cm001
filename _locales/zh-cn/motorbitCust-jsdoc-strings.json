@@ -28,5 +28,10 @@
   "motorbitCust.readLeftPatrolSensor": "读取左巡线传感器。",
   "motorbitCust.readRightPatrolSensor": "读取右巡线传感器。",
   "motorbitCust.readXRocker": "读取摇杆的X轴。",
-  "motorbitCust.readYRocker": "读取摇杆的Y轴。"
+  "motorbitCust.readYRocker": "读取摇杆的Y轴。",
+  "motorbitCust.ping": "发送ping并获得回声时间结果（以微秒为单位）",
+  "motorbitCust.ping|param|echo": "echo引脚",
+  "motorbitCust.ping|param|maxCmDistance": "最大距离单位cm(默认500)",
+  "motorbitCust.ping|param|trig": "tigger引脚",
+  "motorbitCust.ping|param|unit": "转换单位"
 }

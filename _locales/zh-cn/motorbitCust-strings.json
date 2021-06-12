@@ -54,6 +54,10 @@
   "motorbitCust.readRightPatrolSensor|block": "读取引脚%pin上的右巡线传感器",
   "motorbitCust.readXRocker|block": "读取引脚%pin上的摇杆X轴",
   "motorbitCust.readYRocker|block": "读取引脚%pin上的摇杆Y轴",
+  "motorbitCust.ping|block": "超声波测距trig引脚％trig |echo引脚％echo |单位%unit",
+  "motorbitCust.PingUnit.Centimeters|block": "cm",
+  "motorbitCust.PingUnit.Inches|block": "inches",
+  "motorbitCust.PingUnit.MicroSeconds|block": "μs",
   "motorbitCust|block": "motorbitCust",
   "{id:category}motorbitCust": "motorbitCust",
   "{id:subcategory}IR Receiver": "IR Receiver"
