@@ -259,7 +259,7 @@ namespace motorbitCust {
     //% weight=59
     //% blockId=motorbitCust_readLeftPatrolSensor
     //% block="Read Left Patrol Sensor on %pin"
-    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    //% pinl.fieldEditor="gridpicker" pinl.fieldOptions.columns=4 
     export function readLeftPatrolSensor(pinl: DigitalPin): number {
         return pins.digitalReadPin(pinl)
     }
@@ -272,7 +272,7 @@ namespace motorbitCust {
     //% weight=58
     //% blockId=motorbitCust_readRightPatrolSensor
     //% block="Read Right Patrol Sensor on %pin"
-    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    //% pinr.fieldEditor="gridpicker" pinr.fieldOptions.columns=4 
     export function readRightPatrolSensor(pinr: DigitalPin): number {
         return pins.digitalReadPin(pinr)
     }
@@ -285,7 +285,7 @@ namespace motorbitCust {
     //% weight=55
     //% blockId=motorbitCust_readXRocker
     //% block="Read Rocker X-axis on %pin"
-    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    //% pinx.fieldEditor="gridpicker" pinx.fieldOptions.columns=4 
     export function readXRocker(pinx: AnalogPin): number {
         return pins.analogReadPin(pinx)
     }
@@ -298,7 +298,7 @@ namespace motorbitCust {
     //% weight=54
     //% blockId=motorbitCust_readYRocker
     //% block="Read Rocker Y-axis on %pin"
-    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
     export function readYRocker(piny: AnalogPin): number {
         return pins.analogReadPin(piny)
     }
@@ -311,6 +311,9 @@ namespace motorbitCust {
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
     //% blockId=motorbitCust_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
+    //% trig.fieldEditor="gridpicker" trig.fieldOptions.columns=4 
+    //% echo.fieldEditor="gridpicker" echo.fieldOptions.columns=4 
+    //% unit.fieldEditor="gridpicker" unit.fieldOptions.columns=3 
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
