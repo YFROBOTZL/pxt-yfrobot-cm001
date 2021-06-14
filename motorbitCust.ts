@@ -305,7 +305,7 @@ namespace motorbitCust {
 
     /**
      * Send a ping and get the echo time (in microseconds) as a result
-     * @param trig tigger pin. eg: AnalogPin.P2
+     * @param trig trigger pin. eg: AnalogPin.P2
      * @param echo echo pin. eg: AnalogPin.P8
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)

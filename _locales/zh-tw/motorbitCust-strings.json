@@ -54,7 +54,7 @@
   "motorbitCust.readRightPatrolSensor|block": "讀取引腳%pin上的右巡線傳感器",
   "motorbitCust.readXRocker|block": "讀取引腳%pin上的搖桿X軸",
   "motorbitCust.readYRocker|block": "讀取引腳%pin上的搖桿Y軸",
-  "motorbitCust.ping|block": "超聲波測距trig引腳%trig|echo引腳%echo|單位%unit",
+  "motorbitCust.ping|block": "超聲波引腳trig%trig|echo%echo|單位%unit",
   "motorbitCust.PingUnit.Centimeters|block": "cm",
   "motorbitCust.PingUnit.Inches|block": "inches",
   "motorbitCust.PingUnit.MicroSeconds|block": "μs",
