@@ -58,7 +58,17 @@
   "motorbitCust.PingUnit.Centimeters|block": "cm",
   "motorbitCust.PingUnit.Inches|block": "inches",
   "motorbitCust.PingUnit.MicroSeconds|block": "μs",
+  "motorbitCust.clear|block": "清除显示",
+  "motorbitCust.connectPIN|block": "数码管CLK%pin_c，DIO%pin_d",
+  "motorbitCust.digit|block": "在第%bit位显示数字%num",
+  "motorbitCust.off|block": "关闭显示",
+  "motorbitCust.on|block": "打开显示",
+  "motorbitCust.setIntensity|block": "设置显示亮度%dat",
+  "motorbitCust.showDpAt|block": "设置第%bit位点显示%num",
+  "motorbitCust.showHex|block": "显示16进制数字%num",
+  "motorbitCust.showNumber|block": "显示数字%num",
   "motorbitCust|block": "motorbitCust",
   "{id:category}motorbitCust": "motorbitCust",
-  "{id:subcategory}IR Receiver": "IR Receiver"
+  "{id:category}DigitalTubes": "数码管显示",
+  "{id:subcategory}IR Receiver": "红外遥控"
 }
