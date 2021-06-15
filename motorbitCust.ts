@@ -558,7 +558,7 @@ namespace motorbitCust {
      * @param show is true/false, eg: true
      */
     //% subcategory="DigitalTube"
-    //% blockId="motorbitCust_TM650_SHOW_DP" block="show dot point %bit|show %num"
+    //% blockId="motorbitCust_TM650_SHOW_DP" block="at %bit|show dot point %show"
     //% weight=38 blockGap=8
     export function showDpAt(bit: number, show: boolean) {
         if (show) dat(bit, dbuf[bit % 4] | 0x80)

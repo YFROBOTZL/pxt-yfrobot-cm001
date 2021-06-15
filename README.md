@@ -1,5 +1,6 @@
 # motorbitCust
-Customize YFROBOT MotorBit extension for makecode
+Customize MotorBit extension for makecode -- From YFROBOT
+Support Motorbit, digital tube display module, ultrasonic module, collision switch, cruise sensor, and rocker module. 支持 MotorBit、数码管显示模块、超声波模块、碰撞开关、巡线传感器、摇杆模块。
 
 [MotorBit is an easy-to-use motor drive expansion board for MicroBit](http://www.yfrobot.com.cn/wiki/index.php?title=Motor:Bit)
 
