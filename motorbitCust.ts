@@ -560,6 +560,7 @@ namespace motorbitCust {
     //% subcategory="DigitalTube"
     //% blockId="motorbitCust_TM650_SHOW_DP" block="at %bit|show dot point %show"
     //% weight=38 blockGap=8
+    //% bit.max=3 bit.min=0
     export function showDpAt(bit: number, show: boolean) {
         if (show) dat(bit, dbuf[bit % 4] | 0x80)
         else dat(bit, dbuf[bit % 4] & 0x7F)
