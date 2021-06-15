@@ -20,7 +20,7 @@ let motorbitCustMotor2A = AnalogPin.P16
 //% color="#5698c3" weight=10 icon="\uf12e"
 namespace motorbitCust {
 
-    // IR
+    /////////////////////// IR ///////////////////////
     let irState: IrState
 
     const MICROBIT_MAKERBIT_IR_NEC = 777
@@ -35,22 +35,6 @@ namespace motorbitCust {
         hasNewCommand: boolean;
         bitsReceived: uint8;
         commandBits: uint8;
-    }
-
-    export enum Motors {
-        //% blockId="M1Motor" block="M1"
-        M1 = 0,
-        //% blockId="M2Motor" block="M2"
-        M2 = 1,
-        //% blockId="AllMotors" block="All"
-        MAll = 2
-    }
-
-    export enum Dir {
-        //% blockId="CW" block="Forward"
-        CW = 0x0,
-        //% blockId="CCW" block="Reverse"
-        CCW = 0x1
     }
 
     export enum IrProtocol {
@@ -134,6 +118,23 @@ namespace motorbitCust {
         //% block="9"
         Number_9 = 0x52,
     }
+    /////////////////////// IR ///////////////////////
+
+    export enum Motors {
+        //% blockId="M1Motor" block="M1"
+        M1 = 0,
+        //% blockId="M2Motor" block="M2"
+        M2 = 1,
+        //% blockId="AllMotors" block="All"
+        MAll = 2
+    }
+
+    export enum Dir {
+        //% blockId="CW" block="Forward"
+        CW = 0x0,
+        //% blockId="CCW" block="Reverse"
+        CCW = 0x1
+    }
 
     export enum PingUnit {
         //% block="μs"
@@ -144,7 +145,6 @@ namespace motorbitCust {
         Inches
     }
     
-
     function clamp(value: number, min: number, max: number): number {
         return Math.max(Math.min(max, value), min);
     }
@@ -334,6 +334,8 @@ namespace motorbitCust {
         }
     }
 
+    
+    /////////////////////// IR ///////////////////////
     function pushBit(bit: number): number {
         irState.bitsReceived += 1;
         if (irState.bitsReceived <= 8) {
@@ -558,4 +560,5 @@ namespace motorbitCust {
     export function irButtonCode(button: IrButton): number {
         return button as number;
     }
+    /////////////////////// IR ///////////////////////
 }
