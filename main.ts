@@ -573,6 +573,7 @@ namespace motorbitCust {
     //% subcategory="DigitalTube"
     //% blockId="motorbitCust_TM650_INTENSITY" block="set intensity %dat"
     //% weight=35 blockGap=8
+    //% dat.max=7 dat.min=0
     export function setIntensity(dat: number) {
         if ((dat < 0) || (dat > 8))
             return;
