@@ -69,6 +69,6 @@
   "motorbitCust.showNumber|block": "显示数字%num",
   "motorbitCust|block": "motorbitCust",
   "{id:category}motorbitCust": "motorbitCust",
-  "{id:category}DigitalTubes": "数码管显示",
+  "{id:subcategory}DigitalTube": "数码管显示",
   "{id:subcategory}IR Receiver": "红外遥控"
 }

@@ -32,6 +32,6 @@
   "motorbitCust.ping": "发送ping并获得回声时间结果（以微秒为单位）",
   "motorbitCust.ping|param|echo": "echo引脚",
   "motorbitCust.ping|param|maxCmDistance": "最大距离单位cm(默认500)",
-  "motorbitCust.ping|param|trig": "tigger引脚",
+  "motorbitCust.ping|param|trig": "trigger引脚",
   "motorbitCust.ping|param|unit": "转换单位"
 }

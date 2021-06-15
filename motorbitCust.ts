@@ -215,6 +215,7 @@ namespace motorbitCust {
     //% weight=70
     //% blockId=motorbitCust_forward block="move forward with speed %speed"
     //% speed.min=0 speed.max=255
+    //% advanced=true
     export function forward(speed: number): void {
         motorRun(Motors.MAll, 0, speed);
     }
@@ -226,6 +227,7 @@ namespace motorbitCust {
     //% weight=69
     //% blockId=motorbitCust_back block="move back with speed %speed"
     //% speed.min=0 speed.max=255
+    //% advanced=true
     export function back(speed: number): void {
         motorRun(Motors.MAll, 1, speed);
     }
@@ -237,6 +239,7 @@ namespace motorbitCust {
     //% weight=65
     //% blockId=motorbitCust_turnLeft block="turn left with speed %speed"
     //% speed.min=0 speed.max=255
+    //% advanced=true
     export function turnLeft(speed: number): void {
         motorRun(Motors.M1, 0, 0);
         motorRun(Motors.M2, 0, speed);
@@ -249,6 +252,7 @@ namespace motorbitCust {
     //% weight=64
     //% blockId=motorbitCust_turnRight block="turn right with speed %speed"
     //% speed.min=0 speed.max=255
+    //% advanced=true
     export function turnRight(speed: number): void {
         motorRun(Motors.M1, 0, speed);
         motorRun(Motors.M2, 0, 0);
@@ -331,6 +335,7 @@ namespace motorbitCust {
     //% trig.fieldEditor="gridpicker" trig.fieldOptions.columns=4 
     //% echo.fieldEditor="gridpicker" echo.fieldOptions.columns=4 
     //% unit.fieldEditor="gridpicker" unit.fieldOptions.columns=3 
+    //% inlineInputMode=inline
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
