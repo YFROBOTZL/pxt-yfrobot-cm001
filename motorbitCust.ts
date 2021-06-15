@@ -146,8 +146,8 @@ namespace motorbitCust {
     }
 
     /////////////////////// DigitalTubes ///////////////////////
-    let PINCLK = DigitalPin.P1;
-    let PINDIO = DigitalPin.P2;
+    let PINDIO = DigitalPin.P1;
+    let PINCLK = DigitalPin.P2;
 
     let CMD_SYSTEM_CONFIG = 0x48   
     let DIG1_ADDRESS = 0x68
@@ -358,18 +358,20 @@ namespace motorbitCust {
     /////////////////////// DigitalTubes ///////////////////////
     /**
      * Connects to the digital tube module at the specified pin.
-     * @param pin_c CLK pin. eg: DigitalPin.P1
-     * @param pin_d DIO pin. eg: DigitalPin.P2
+     * @param pin_d DIO pin. eg: DigitalPin.P1
+     * @param pin_c CLK pin. eg: DigitalPin.P2
      */
     //% subcategory="DigitalTube"
     //% weight=59
     //% blockId="motorbitCust_4digitaltubes_pins"
-    //% block="connect 4 digital tubes at CLK %pin_c and DIO %pin_d"
+    //% block="connect 4 digital tubes at DIO %pin_d and CLK %pin_c"
     //% pin_c.fieldEditor="gridpicker" pin_c.fieldOptions.columns=4 pin_c.fieldOptions.tooltips="false"
     //% pin_d.fieldEditor="gridpicker" pin_d.fieldOptions.columns=4 pin_d.fieldOptions.tooltips="false"
-    export function connectPIN(pin_c: DigitalPin, pin_d: DigitalPin): void {
+    export function connectPIN(pin_d: DigitalPin, pin_c: DigitalPin): void {
         PINCLK = pin_c;
         PINDIO = pin_d;
+        on();
+        clear();
     }
 
     /** FrameStart_1650 
@@ -506,6 +508,7 @@ namespace motorbitCust {
     //% blockId="motorbitCust_TM650_DIGIT" block="show digit %num|at %bit"
     //% weight=40 blockGap=8
     //% num.max=15 num.min=0
+    //% bit.max=3 bit.min=0
     export function digit(num: number, bit: number) {
         dbuf[bit % 4] = _SEG[num % 16]
         dat(bit, _SEG[num % 16])
