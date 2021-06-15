@@ -305,12 +305,13 @@ namespace motorbitCust {
 
     /**
      * Send a ping and get the echo time (in microseconds) as a result
-     * @param trig trigger pin. eg: AnalogPin.P2
-     * @param echo echo pin. eg: AnalogPin.P8
+     * @param trig trigger pin. eg: DigitalPin.P2
+     * @param echo echo pin. eg: DigitalPin.P8
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
-    //% blockId=motorbitCust_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
+    //% weight=50
+    //% blockId=motorbitCust_sonar_ping block="ping trig |%trig echo |%echo unit |%unit"
     //% trig.fieldEditor="gridpicker" trig.fieldOptions.columns=4 
     //% echo.fieldEditor="gridpicker" echo.fieldOptions.columns=4 
     //% unit.fieldEditor="gridpicker" unit.fieldOptions.columns=3 
