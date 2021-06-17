@@ -327,8 +327,8 @@ namespace motorbitCust {
      * Send a ping and get the echo time (in microseconds) as a result
      * @param trig trigger pin. eg: DigitalPin.P2
      * @param echo echo pin. eg: DigitalPin.P8
-     * @param unit desired conversion unit
-     * @param maxCmDistance maximum distance in centimeters (default is 500)
+     * @param unit desired conversion unit. eg: PingUnit.cm
+     * @param maxCmDistance maximum distance in centimeters (default is 450)
      */
     //% weight=50
     //% blockId=motorbitCust_sonar_ping block="ping trig |%trig echo |%echo unit |%unit"
@@ -336,7 +336,7 @@ namespace motorbitCust {
     //% echo.fieldEditor="gridpicker" echo.fieldOptions.columns=4 
     //% unit.fieldEditor="gridpicker" unit.fieldOptions.columns=3 
     //% inlineInputMode=inline
-    export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
+    export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 450): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
         pins.digitalWritePin(trig, 0);
