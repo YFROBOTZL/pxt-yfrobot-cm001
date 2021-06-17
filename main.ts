@@ -327,7 +327,7 @@ namespace motorbitCust {
      * Send a ping and get the echo time (in microseconds) as a result
      * @param trig trigger pin. eg: DigitalPin.P2
      * @param echo echo pin. eg: DigitalPin.P8
-     * @param unit desired conversion unit. eg: PingUnit.cm
+     * @param unit desired conversion unit. eg: PingUnit.Centimeters
      * @param maxCmDistance maximum distance in centimeters (default is 450)
      */
     //% weight=50
@@ -340,9 +340,9 @@ namespace motorbitCust {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
         pins.digitalWritePin(trig, 0);
-        control.waitMicros(2);
-        pins.digitalWritePin(trig, 1);
         control.waitMicros(10);
+        pins.digitalWritePin(trig, 1);
+        control.waitMicros(50);
         pins.digitalWritePin(trig, 0);
 
         // read pulse
